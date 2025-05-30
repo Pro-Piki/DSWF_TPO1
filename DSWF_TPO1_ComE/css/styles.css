@@ -1,0 +1,580 @@
+/*===============================
+=            VARIABLES          =
+===============================*/
+:root {
+    --color-principal: #855a38;
+    --color-acento: #ca7373;
+    --color-claro: #f6f2ee;
+    --color-oscuro: #222;
+    --color-texto: #333;
+    --color-acento-claro: #ca737323;
+}
+
+
+/*===============================
+=            FONTS              =
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playwrite+HU:opsz@10..100&display=swap');
+
+
+/*===============================
+=         RESET GENERAL         =
+===============================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: 'Playwrite HU', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link {
+    color: var(--color-claro);
+}
+
+a:visited {
+    color: var(--color-principal);
+}
+
+a:hover {
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+a:active {
+    color: #000;
+}
+
+
+/*===============================
+=           NAVBAR              =
+===============================*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+    background-color: var(--color-oscuro);
+    color: var(--color-acento);
+    font-weight: bold;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 5vw;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2vw;
+}
+
+.nav-links a {
+    font-size: 1em;
+}
+
+.navbar .nav-content a:hover {
+    color: var(--color-acento);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    margin-top: 7px;
+}
+
+
+/*===============================
+=         HERO SECTION          =
+===============================*/
+.hero {
+    height: 100vh;
+    background: url('../img/cafecat4.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+
+
+/*===============================
+=      SECCION PRODUCTOS        =
+===============================*/
+.productos {
+    padding: 10vh 5vw;
+    text-align: center;
+    background-color: var(--color-acento-claro);
+}
+
+.productos h2 {
+    font-size: 2em;
+    margin-bottom: 2vh;
+}
+
+.productos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.productos-galeria img {
+    flex: 1 1 18%;
+    min-width: 150px;
+    max-width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*===============================
+=         SECCIÓN CAFÉS         =
+===============================*/
+.cafes {
+    padding: 10vh 5vw;
+    text-align: center;
+    background-color: var(--color-acento-claro);
+}
+
+.cafes h2 {
+    font-size: 2em;
+    margin-bottom: 2vh;
+}
+
+.contenido-cafe {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.contenido-cafe .texto {
+    flex: 1 1 25%;
+    font-size: 1em;
+    padding: 2vh;
+}
+
+.contenido-cafe .imagen {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.contenido-cafe img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.contenido-cafe h3 {
+    color: var(--color-principal);
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.contenido-cafe p {
+    margin-bottom: 1.5em;
+}
+
+
+/*===============================
+=       SECCION TIENDA          =
+===============================*/
+.tienda-cercana {
+    padding: 10vh 5vw;
+    background: url('../img/wificat.jpg') center/cover no-repeat;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.tienda-cercana::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.tienda-cercana * {
+    position: relative;
+    z-index: 1;
+}
+
+.tienda-cercana .intro {
+    font-size: 1.8em;
+}
+
+.tienda-cercana h2 {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 1vh 0;
+    font-family: 'Playwrite HU', serif;
+    color: var(--color-acento);
+}
+
+.tienda-cercana .descripcion {
+    font-size: 1em;
+    margin-bottom: 3vh;
+}
+
+.boton-tienda {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: var(--color-principal);
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-tienda:hover {
+    background-color: var(--color-acento);
+}
+
+
+/*===============================
+=            FOOTER             =
+===============================*/
+.footer {
+    padding: 5vh 5vw;
+    background-color: var(--color-oscuro);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.footer .columna {
+    flex: 1 1 30%;
+    padding: 1vh;
+}
+
+.columna-logo {
+    font-size: 1.5em;
+    color: var(--color-acento);
+    ;
+    font-weight: bold;
+}
+
+.columna-links-doble {
+    display: flex;
+    flex: 1 1 40%;
+    gap: 3vw;
+}
+
+.subcolumna {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.subcolumna h4 {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: var(--color-principal);
+}
+
+.subcolumna a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+
+.columna-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.columna form input[type="text"],
+.columna form input[type="email"] {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 4px;
+    outline: none;
+}
+
+.columna-form button {
+    padding: 0.5em;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.columna-form button:hover {
+    background-color: var(--color-acento);
+    font-weight: bold;
+}
+
+.columna-form p {
+    text-align: center;
+    color: var(--color-principal);
+}
+
+.redes {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.redes p {
+    margin-bottom: 10px;
+}
+
+.redes a {
+    margin: 0 0.5em;
+    color: inherit;
+}
+
+.redes i {
+    color: var(--color-claro);
+    ;
+    font-size: 1.5rem;
+}
+
+.footer-copyright {
+    color: var(--color-claro);
+    ;
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #aaa;
+    padding-top: 2vh;
+}
+
+footer .columna>a {
+    font-weight: 600;
+}
+
+/*===============================
+=     TRABAJAR EN CAT CAFÉ      =
+===============================*/
+
+.formulario-trabajo {
+    max-width: 90vw;
+    margin: 130px auto 0;
+    padding: 2rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.formulario-trabajo h2,
+.formulario-trabajo h3,
+.formulario-trabajo p {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Playwrite HU', serif;
+}
+
+.formulario-trabajo p {
+    margin-bottom: 2rem;
+}
+
+.linea-corta {
+    width: 120px;
+    height: 3px;
+    background-color: var(--color-principal);
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    margin: 8px auto 16px auto;
+}
+
+.formulario-trabajo .fila {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.formulario-trabajo .campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-trabajo input,
+.formulario-trabajo select,
+.formulario-trabajo textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.formulario-trabajo button {
+    padding: 0.7rem 1.5rem;
+    background-color: var(--color-principal);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.formulario-trabajo button:hover {
+    background-color: var(--color-acento);
+    font-weight: bold;
+}
+
+.campo label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+
+/*===============================
+=          RESPONSIVE           =
+===============================*/
+@media (max-width: 900px) {
+    .contenido-cafe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-cafe .texto,
+    .contenido-cafe .imagen {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+/* Tablet horizontal (max-width: 1080px) */
+@media (max-width: 1080px) {
+    .nav-links {
+        gap: 1.5vw;
+    }
+
+    .productos-galeria img {
+        max-width: 30%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tablet vertical (max-width: 768px) */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .logo-img {
+        width: 80px;
+    }
+
+    .productos-galeria img {
+        max-width: 45%;
+    }
+
+    .tienda-cercana h2 {
+        font-size: 2.2em;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .columna-links-doble {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+/* Móvil 1 (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 6vw;
+        padding: 0.5em;
+    }
+
+    .productos-galeria {
+        gap: 3vw;
+    }
+
+    .productos-galeria img {
+        max-width: 90%;
+    }
+
+    .contenido-cafe .texto {
+        font-size: 0.9em;
+    }
+
+    .tienda-cercana .intro {
+        font-size: 1.3em;
+    }
+
+    .tienda-cercana h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Móvil 2 (max-width: 375px) */
+@media (max-width: 375px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .boton-tienda {
+        padding: 0.7em 1.2em;
+        font-size: 0.9em;
+    }
+
+    .columna-form form {
+        gap: 0.3em;
+    }
+
+    .columna-form button {
+        font-size: 0.9em;
+    }
+}
