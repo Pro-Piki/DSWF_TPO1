@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Página tienda Cat Café generada en HTML5 y CSS3" name="description" />
+    <meta content="PINK CODE - Grupo 7 - Com E" name="author" />
+    <link rel="icon" href="./img/cat.ico" type="image/x-icon" />
+    <title>Trabaja con nosotros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <!-- SECCION FORM SUMATE -->
+    <section class="formulario-trabajo">
+        <h3 style="font-size: 1.1rem;">Sumate a nuestro Michi equipo</h3>
+        <h2 style="font-size: 2rem; font-weight: bold;">Trabajá en Cat Café</h2>
+        <hr class="linea-corta" />
+        <p style="font-size: 1rem;">Si querés formar parte de Cat Café envianos tus datos y adjuntá tu CV</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="fila">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="campo">
+                    <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
+                    <input type="text" id="puesto" name="puesto">
+                </div>
+                <div class="campo">
+                    <label for="sucursal">¿Cuál es tu sucursal de preferencia?</label>
+                    <select id="sucursal" name="sucursal" required>
+                        <option value="" disabled selected>Seleccione una sucursal</option>
+                        <option value="palermo">Palermo</option>
+                        <option value="belgrano">Belgrano</option>
+                        <option value="recoleta">Recoleta</option>
+                        <option value="caballito">Caballito</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="campo" style="width: 100%;">
+                    <label for="cv">Adjuntar CV</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="campo" style="width: 100%;">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="10" placeholder="Escribí tu mensaje..."></textarea>
+                </div>
+            </div>
+
+            <div class="fila">
+                <button type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </section>
+
+
+    <div id="footer"></div>
+
+    <script src="./js/scripts.js"></script>
+    <script>
+        includeHTML("navbar", "navbar.html");
+        includeHTML("footer", "footer.html");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Página tienda Cat Café generada en HTML5 y CSS3" name="description" />
+    <meta content="PINK CODE - Grupo 7 - Com E" name="author" />
+    <title>Adopciones</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="./img/cat.ico" type="image/x-icon" />
+  </head>
+  <body class="adopciones">
+    <!-- NAV BAR -->
+    <div id="navbar-container"></div>
+
+    <!-- Banner -->
+    <header class="banner">
+      <img src="img/banner.jpg" alt="Banner de adopciones" />
+      <h1 class="banner-title">NUESTROS GATITOS</h1>
+    </header>
+
+    <main>
+      <!-- Segundo Banner -->
+      <section class="banner-secundario">
+        <div class="contenido-banner">
+          <div><h2>¡Conocé a los gatitos antes de irte!</h2></div>
+          <div>
+            <p>
+              Vienen en todas las formas, colores y tamaños, llenos de diversión
+              esponjosa y adorable.
+            </p>
+          </div>
+          <div class="botones">
+            <button>PROCESO DE ADOPCIÓN</button>
+            <button>TRÁNSITO PARA GATOS</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenido de adopciones -->
+      <!-- FILTROS -->
+      <div class="filtro-container">
+        <button class="filtro-boton activo" data-filtro="todos">TODOS</button>
+        <button class="filtro-boton" data-filtro="caba">CABA</button>
+        <button class="filtro-boton" data-filtro="provincia">
+          PROV. BS AS
+        </button>
+        <button class="filtro-boton" data-filtro="transito">EN TRÁNSITO</button>
+      </div>
+
+      <!-- GALERÍA DE GATITOS -->
+      <div class="gatitos-container">
+        <div class="gatito-card" data-zona="caba">
+          <div class="gatito-img">
+            <img src="img/adop1.jpg" alt="Gato 1" />
+          </div>
+          <div class="gatito-info caba">
+            <h3>Ceniza</h3>
+            <h4>Michi de CABA</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="provincia">
+          <div class="gatito-img">
+            <img src="img/adop2.jpg" alt="Gato 2" />
+          </div>
+          <div class="gatito-info prov">
+            <h3>Bigotes</h3>
+            <h4>Michi de PROV. BS AS</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="provincia">
+          <div class="gatito-img">
+            <img src="img/adop3.jpg" alt="Gato 2" />
+          </div>
+          <div class="gatito-info prov">
+            <h3>Morci</h3>
+            <h4>Michi de PROV. BS AS</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="transito">
+          <div class="gatito-img">
+            <img src="img/adop4.jpg" alt="Gato 2" />
+          </div>
+          <div class="gatito-info transito">
+            <h3>Vaky</h3>
+            <h4>Michi en TRÁNSITO</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="caba">
+          <div class="gatito-img">
+            <img src="img/adop5.jpg" alt="Gato 1" />
+          </div>
+          <div class="gatito-info caba">
+            <h3>Luna</h3>
+            <h4>Michi de CABA</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="transito">
+          <div class="gatito-img">
+            <img src="img/adop6.jpg" alt="Gato 2" />
+          </div>
+          <div class="gatito-info transito">
+            <h3>Don Gato</h3>
+            <h4>Michi en TRÁNSITO</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="caba">
+          <div class="gatito-img">
+            <img src="img/adop7.jpg" alt="Gato 1" />
+          </div>
+          <div class="gatito-info caba">
+            <h3>Tecito</h3>
+            <h4>Michi de CABA</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="provincia">
+          <div class="gatito-img">
+            <img src="img/adop8.jpg" alt="Gato 2" />
+          </div>
+          <div class="gatito-info prov">
+            <h3>Charly</h3>
+            <h4>Michi de PROV. BS AS</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="provincia">
+          <div class="gatito-img">
+            <img src="img/adop9.jpg" alt="Gato 2" />
+          </div>
+          <div class="gatito-info prov">
+            <h3>Nube</h3>
+            <h4>Michi de PROV. BS AS</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="transito">
+          <div class="gatito-img">
+            <img src="img/adop10.jpg" alt="Gato 2" />
+          </div>
+          <div class="gatito-info transito">
+            <h3>Lucy y Lola</h3>
+            <h4>Michis en TRÁNSITO</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="transito">
+          <div class="gatito-img">
+            <img src="img/adop11.jpg" alt="Gato 2" />
+          </div>
+          <div class="gatito-info transito">
+            <h3>Caramelo</h3>
+            <h4>Michi en TRÁNSITO</h4>
+          </div>
+        </div>
+
+        <div class="gatito-card" data-zona="caba">
+          <div class="gatito-img">
+            <img src="img/adop12.jpg" alt="Gato 1" />
+          </div>
+          <div class="gatito-info caba">
+            <h3>Karina</h3>
+            <h4>Michi de CABA</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="./js/scripts.js"></script>
+    <script>
+        includeHTML("navbar-container", "navbar.html");
+        includeHTML("footer-container", "footer.html");
+    </script>
+  </body>
+</html>

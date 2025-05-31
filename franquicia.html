@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="Página tienda Cat Café generada en HTML5 y CSS3" name="description" />
+    <meta content="PINK CODE - Grupo 7 - Com E" name="author" />
+    <title>Franquicia</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="./img/cat.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <div id="navbar-container"></div>
+
+    <div class="franquicia-container">
+      <div class="franquicia-header">
+        <h3>Conocé todas las opciones</h3>
+      </div>
+
+      <div class="franquicia-subtitulo">
+        <h2>Convertite en franquiciado</h2>
+        <hr />
+      </div>
+
+      <div class="franquicia-texto">
+        <p>
+          ¿Querés ser parte de este Michi equipo? Dejanos tus datos, y nos
+          pondremos en contacto para contarte todas las posibilidades de tu
+          próxima franquicia Cat Café.
+        </p>
+      </div>
+
+      <form class="franquicia-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="como">¿Cómo llegaste a nosotros?</label>
+            <input type="text" id="como" name="como" />
+          </div>
+          <div class="form-group">
+            <label for="zona">¿En qué zona te interesaría instalar la franquicia?</label>
+            <input type="text" id="zona" name="zona" />
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script src="./js/scripts.js"></script>
+    <script>
+      includeHTML("navbar-container", "navbar.html");
+      includeHTML("footer-container", "footer.html");
+    </script>
+  </body>
+</html>
