@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Página tienda Cat Café generada en HTML5 y CSS3" name="description" />
+    <meta content="PINK CODE - Grupo 7 - Com E" name="author" />
+    <link rel="icon" href="./img/cat.ico" type="image/x-icon" />
+    <title>Cat Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Bienvenido al mundo del café</h1>
+    </section>
+
+    <!-- SECCION PRODUCTOS -->
+    <section class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-galeria">
+            <img src="./img/catcake.jpg" alt="Café 1" />
+            <img src="./img/catcoockie.jpg" alt="Café 2" />
+            <img src="./img/catsand.jpg" alt="Café 3" />
+            <img src="./img/catsand2.jpg" alt="Café 4" />
+            <img src="./img/icecat2.jpg" alt="Café 5" />
+        </div>
+    </section>
+
+    <!-- SECCIÓN INTERMEDIA -->
+    <section class="cafes">
+        <h2>¿Qué café vas a elegir hoy?</h2>
+        <div class="contenido-cafe">
+            <div class="texto">
+                <h3>Barista</h3>
+                <p>Nuestro tradicional house blend, el hijo prodigio de la casa. Granos provenientes de Brasil, nos
+                    permiten obtener este cafe pleno, de cuerpo medio, sin acidez ni amargor. Si lo vas a tomar en tu
+                    casa, te vas a sentir bien cerca de TIENDA.</p>
+                <h3>Scegliere</h3>
+                <p>Una combinación única, lograda por la combinación de tres varietales: Brasil Santos Mogiana, Colombia
+                    Supremo y Moka. Un café de cuerpo medio, levemente acidulado y estructuralmente complejo.</p>
+                <h3>Minka</h3>
+                <p>Este blend nos regala un café de gran cuerpo, con un sabor especiado. Si sos amante del café intenso,
+                    te vas a enamorar de nuestro Minka.</p>
+            </div>
+
+            <div class="imagen">
+                <img src="img/cat8.jpg" alt="Café Central">
+            </div>
+
+            <div class="texto">
+                <h3>Colombia</h3>
+                <p>Nuestro varietal clásico. Adentrate en las regiones colombianas con este café de cuerpo suave, gusto
+                    frutado, aroma floral y una delicada acidez. Inconfundible.</p>
+                <h3>Descafeinado</h3>
+                <p>Si querés disfrutar un exquisito café, pero reducir tu dosis diaria de cafeína, este es tu blend!
+                    Café originario de Colombia, suave, de cuerpo medio y un aroma que te invita a probarlo. Recomendado
+                    para aquellas personas sensibles a la cafeína.</p>
+                <h3>Brasil</h3>
+                <p>Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal para tus preparaciones de café
+                    filtrado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSECCION TIENDA CERCANA -->
+    <section class="tienda-cercana">
+        <p class="intro">SIEMPRE HAY UNA</p>
+        <h2>Tienda cerca tuyo</h2>
+        <p class="descripcion">Encontrá nuestra sucursal más cercana.</p>
+        <a href="locales.html" class="boton-tienda">Ingresar</a>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="./js/scripts.js"></script>
+    <script>
+        includeHTML("navbar", "navbar.html");
+        includeHTML("footer", "footer.html");
+    </script>
+
+</body>
+
+</html>
