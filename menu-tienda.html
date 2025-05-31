@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopciones</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <div id="navbar-container"></div>
+
+    <!-- BANNER -->
+    <header class="banner">
+      <img src="img/cat5.jpg" alt="Banner de menu" />
+      <h4 class="banner-menu">NUESTRO MEOW MENÚ</h4>
+    </header>
+
+    <main class="menu-tienda">
+    <div class="menu-galeria-flex">
+      <div class="columna">
+        <img src="img/catcake.jpg" alt="Producto 1">
+        <img src="img/cafecat3.jpg" alt="Producto 2">
+        <img src="img/catsand2.jpg" alt="Producto 3">
+        <img src="img/icecat2.jpg" alt="Producto 4">
+      </div>
+      <div class="columna">
+        <img src="img/mashcat.jpg" alt="Producto 5">
+        <img src="img/catsand.jpg" alt="Producto 6">
+        <img src="img/cafecat.jpg" alt="Producto 7">
+        <img src="img/catcoockie.jpg" alt="Producto 8">
+      </div>
+    </div>
+  </main>
+
+  <!-- SECCION TIENDA CERCANA -->
+    <section class="tienda-cercana">
+        <p class="intro">SIEMPRE HAY UNA</p>
+        <h2>TIENDA CERCA TUYO</h2>
+        <p class="descripcion">Encontrá nuestra sucursal más cercana.</p>
+        <a href="locales.html" class="boton-tienda">Ingresar</a>
+    </section>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <script src="./js/scripts.js"></script>
+    <script>
+        includeHTML("navbar-container", "navbar.html");
+        includeHTML("footer-container", "footer.html");
+    </script>
+</body>
+</html>

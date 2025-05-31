@@ -1,1 +1,5 @@
-// opcional porque aún no lo vimos
+async function includeHTML(id, url) {
+  const response = await fetch(url);
+  const html = await response.text();
+  document.getElementById(id).innerHTML = html;
+}
